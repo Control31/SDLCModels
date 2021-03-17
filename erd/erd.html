@@ -90,16 +90,16 @@
             <h3>ERD Description</h3>
             <h4>Table Primary Colors</h4>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The table holds the primary colors.</li>
+                <li>PrimaryColorId is the primary key for the table and PrimaryColorName has the name of the primary color for the corresponding Id.</li>
+                <li>This table does not contain foreign keys, however it supplies the foreign key to the shade table to show which primary color the shade originates from.</li>
             </ul>
 
-            <h4>Table Shades</h4>
+            <h4>Table Shade</h4>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The table holds different shades of the primary colors. It also shows which primary color the shade originates from.</li>
+                <li>ShadeId is the primary key for the table and ColorName has the name of the shade of the corresponding Id. PrimaryColorId has the Id of the primary color the shade originates from.</li>
+                <li>This table contains the foreign key PrimaryColorId, which shows which primary color the shade originates from. This table does not supply a foreign key.</li>
             </ul>
         </div>
 
