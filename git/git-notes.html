@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        code {
+            background-color: black;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+    <title>Git and GitHub</title>
+</head>
+
+<body>
+    <div>
+        <h1>Git</h1>
+        <p>Git is a version control system, it can manage source code history. Git saves changes locally.</p>
+        <p>Git consists of <b>repositories, branches</b> and <b>commits</b>.</p>
+        <p><b>Repository</b> - The location where your code is stored.</p>
+        <p><b>Branch</b> - "Folder" within the repository containing commits.</p>
+        <p><b>Commits</b> - Differents stages of your code inside a branch.</p>
+
+        <h2>Commands</h2>
+        <code>$git init</code>
+        <p>Initialization of a git repository inside a project folder to be managed by git.</p>
+        <code>$git status</code>
+        <p>Display the status of monitored/tracked files.</p>
+        <code>$git add .</code>
+        <p>Add files in the project to be tracked. '.' for all files.</p>
+        <code>$git commit -m "..."</code>
+        <p>Save current code as a version in the branch, "..." will be the name of the commit.</p>
+        <code>$git branch</code>
+        <p>View all branches.</p>
+        <code>$git log</code>
+        <p>View all commits. The latest commit is at the top. HEAD marks the currently active commit.</p>
+        <code>$git checkout (id of commit)</code>
+        <p>View a commit. This commit becomes the HEAD but is no longer inside its branch.</p>
+        <code>$git master</code>
+        <p>Return to master branch.</p>
+        <code>$git reset --hard (id of commit)</code>
+        <p>Go to a commit and delete all commits after that.</p>
+        <code>$git checkout -b (branch-name)</code>
+        <p>Create a new branch with all previous commits.</p>
+        <code>$git checkout (branch-name)</code>
+        <p>Switch to specified branch.</p>
+        <code>$git merge (branch-name)</code>
+        <p>Merge branches.</p>
+        <code>$git branch -D (branch-name)</code>
+        <p>Delete a branch.</p>
+    </div>
+    <hr>
+    <div>
+        <h1>GitHub</h1>
+        <p>GitHub is a hosting and collaboration provider. It is a web based git repository.</p>
+        <p>Allows the storage of local git repositories in the cloud, turning them into remote repositories.</p>
+        <h2>Commands</h2>
+        <code>$git remote add origin (link of repository)</code>
+        <p>Establish a connection between a local and remote repository.
+            origin is the name, it can be changed.
+            </p>
+        <code>$git remote</code>
+        <p>Shows the name of the remote repository.</p>
+        <code>$git remote -v</code>
+        <p>Shows the name and link of the remote repository.</p>
+        <code>$git push -u origin master</code>
+        <p>Pushes branches to the remote repository. '-u origin master' is necessary for the first push. Pushing requires a username and password.</p>
+        <code>$git branch -r</code>
+        <p>Shows the connection between the remote and the local repository.</p>
+        <code>$git clone (link of repository)</code>
+        <p>Creates a copy of a remote repository on the local machine.</p>
+        <code>$git push</code>
+        <p>Pushes changes to the remote repository.</p>
+        <code>$git fetch</code>
+        <p>Fetches changes from the remote repository.</p>
+        <code>$git checkout origin/master</code>
+        <p>Looking at changes after fetching.</p>
+        <code>$git merge origin/master</code>
+        <p>Merges the local and the remote repository.</p>
+        <code>$git pull</code>
+        <p>Fetches from the remote repository and merges with the local repository.</p>
+        <code>$git remote rm (name of repository)</code>
+        <p>Deletes a repository.</p>
+    </div>
+
+</body>
+
+</html>
